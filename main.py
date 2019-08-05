@@ -15,7 +15,7 @@ from google.auth.transport.requests import Request
 
 # Global Variables
 SCOPES = ['https://www.googleapis.com/auth/spreadsheets']
-SPREADSHEET_ID = '1bHS6nO7Q3CwIVMkV5z_4Rwe4QIYGFHesRhSGJHr12P0'
+SPREADSHEET_ID = os.environ['SPREADSHEET_ID']
 
 
 def get_google_sheets():
