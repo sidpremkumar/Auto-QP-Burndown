@@ -46,18 +46,6 @@ def get_google_sheets():
     # Call the Sheets API
     sheet = service.spreadsheets()
     return sheet
-    # import pdb; pdb.set_trace()
-    # result = sheet.values().get(spreadsheetId=SAMPLE_SPREADSHEET_ID,
-    #                             range=SAMPLE_RANGE_NAME).execute()
-    # values = result.get('values', [])
-    #
-    # if not values:
-    #     print('No data found.')
-    # else:
-    #     print('Name, Major:')
-    #     for row in values:
-    #         # Print columns A and E, which correspond to indices 0 and 4.
-    #         print('%s, %s' % (row[0], row[4]))
 
 def update_google_sheets(client, values):
     """
