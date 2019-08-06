@@ -47,6 +47,7 @@ def get_google_sheets():
     sheet = service.spreadsheets()
     return sheet
 
+
 def update_google_sheets(client, values):
     """
     Function to update the Google Sheet.
@@ -163,7 +164,7 @@ def get_letter_from_coordinate(x):
     :return: Letter corresponding to number
     :rtype: String
     """
-    alpha = ['INVALID', 'A', 'B', 'C', 'D', 'E', 'F', 'H', 'I', 'J', 'K',
+    alpha = ['INVALID', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K',
              'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U',
              'V', 'W', 'X', 'Y', 'Z']
     return alpha[x]
